@@ -1,4 +1,4 @@
----
+![image](https://github.com/MicrosoftDocs/entra-docs/assets/101168840/b9aac9ee-63a7-405a-95ce-b77b5d53d765)---
 title: Support for FIDO2 authentication with Microsoft Entra ID
 description: Web browser and native app support for FIDO2 passwordless authentication using Microsoft Entra ID.
 
@@ -29,13 +29,15 @@ The following tables lists which authentication brokers are supported for differ
 
 | OS | Authentication broker           | Supports FIDO2 |
 |------------------|---------------------------------|----------------|
-| **iOS**              | Microsoft Authenticator         | &#x2705;       |
-| **macOS**            | Microsoft Intune Company Portal <sup>1</sup> | &#x2705;       |
-| **Android**<sup>2</sup> | Authenticator or Company Portal | &#10060;    |
+| **iOS**<sup>1</sup>              | Microsoft Authenticator         | &#x2705;       |
+| **macOS**            | Microsoft Intune Company Portal <sup>2</sup> | &#x2705;       |
+| **Android**<sup>3</sup> | Authenticator or Company Portal | &#10060;    |
 
-<sup>1</sup>On macOS, the [Microsoft Enterprise Single Sign On (SSO) plug-in](~/identity-platform/apple-sso-plugin.md) is required to enable Company Portal as an authentication broker. Devices that run macOS must meet SSO plug-in requirements, including enrollment in mobile device management. For FIDO2 authentication, make sure that you run the latest version of native applications. 
+<sup>1</sup>An iPhone or iPad running iOS 17. Passkeys are not supported on iOS 16 and earlier.
 
-<sup>2</sup>Native application support for FIDO2 on Android is in development.
+<sup>2</sup>On macOS, the [Microsoft Enterprise Single Sign On (SSO) plug-in](~/identity-platform/apple-sso-plugin.md) is required to enable Company Portal as an authentication broker. Devices that run macOS must meet SSO plug-in requirements, including enrollment in mobile device management. For FIDO2 authentication, make sure that you run the latest version of native applications. 
+
+<sup>3</sup>Native application support for FIDO2 on Android is in development.
 
 If a user installed an authentication broker, they can choose to sign in with a security key when they access an application such as Outlook. They're redirected to sign in with FIDO2, and redirected back to Outlook as a signed in user after successful authentication.
 
